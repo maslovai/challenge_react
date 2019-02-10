@@ -1,0 +1,25 @@
+$myColor: rgb(153, 180, 255);
+body{
+    background:gradient($myColor, lighten($myColor,20%));
+    display: flex;
+    #root{
+        position: absolute;
+        left: 30%;
+        background-color:darken($myColor,10%);
+        color:darken($myColor, 60%);
+        justify-content: space-around;
+        flex-direction: column;
+        width:25%;
+        height:50em;
+    }
+    .hidden{
+        max-width:0px;
+        overflow:hidden;
+        opacity:0;
+    }
+    .active{
+        max-width:650px;
+        transition:all 500ms ease;
+        opacity: 1;
+    }
+}
