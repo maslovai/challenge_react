@@ -1,4 +1,4 @@
-$myColor: rgb(153, 180, 255);
+$myColor: rgb(154, 180, 255);
 body{
     background:gradient($myColor, lighten($myColor,20%));
     display: flex;
